@@ -30,12 +30,12 @@ jobs:
 
       - name: Validate HTML files
         run: |
-          npx html-validate index.html attendance.html courses.html
+          npx html-validate index.html attendence.html courses.html
 
       - name: Package application
         run: |
           mkdir -p dist
-          cp index.html attendance.html courses.html README.md dist/
+          cp index.html attendence.html courses.html README.md dist/
           cd dist
           zip -r ../college-erp.zip .
 

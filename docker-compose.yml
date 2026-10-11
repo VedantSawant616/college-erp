@@ -1,0 +1,8 @@
+services:
+  college-erp:
+    build:
+      context: .
+    container_name: college-erp
+    ports:
+      - "8080:80"
+    restart: unless-stopped
